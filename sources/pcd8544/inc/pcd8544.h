@@ -51,7 +51,7 @@ void PCD8544_Write_CMD(uint8_t data);
 // PCD8544 Init
 //------------------------------------------------------
 void PCD8544_Init(uint8_t contrast);
-// Выбирает страницу и горизонтальную позицию для вывода
+// PCD8544 Display Cursor - Row_Y and Column_X
 //------------------------------------------------------
 void PCD8544_Display_Cursor(uint8_t Row_Y, uint8_t Column_X);
 // PCD8544 Line Position
