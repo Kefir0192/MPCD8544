@@ -121,7 +121,7 @@ AFOBJ= \
 
 .PHONY : all
 all: $(AFOBJ) $(MPCD8544_opj)
-	@$(LD) $(AFOBJ) $(MHD44780_opj) $(MLCDMenu_opj) $(LINKFLAGS) $(LIBFLAGS) -o $(PATH_BIN)$(NAMEPROJ).elf
+	@$(LD) $(AFOBJ) $(MPCD8544_opj) $(LINKFLAGS) $(LIBFLAGS) -o $(PATH_BIN)$(NAMEPROJ).elf
 	@$(OBJDUMP) -D $(PATH_BIN)$(NAMEPROJ).elf > $(PATH_BIN)$(NAMEPROJ).asm
 	@$(OBJCOPY) $(PATH_BIN)$(NAMEPROJ).elf $(PATH_BIN)$(NAMEPROJ).bin -O binary
 
